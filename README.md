@@ -97,6 +97,8 @@ dbt run
 dbt test
 4. Run Prefect pipeline
 python prefect_flows/ev_pipeline_flow.py
+```
+
 ### 📈 Dashboard Preview
 
 Add a screenshot of your Power BI dashboard here:
