@@ -41,3 +41,80 @@ Prefect (Orchestration Layer)
    ↓
 Power BI (Dashboard & Insights)
 ```
+## 🛠️ Tech Stack
+
+- **BigQuery** → Data warehouse  
+- **dbt** → Data transformation & modeling  
+- **Prefect** → Workflow orchestration  
+- **Power BI** → Data visualization  
+- **Python** → Pipeline automation  
+- **SQL** → Data processing  
+
+---
+
+## 🔄 Pipeline Workflow
+
+- Raw EV dataset is loaded into BigQuery  
+- dbt staging models clean and standardize data  
+- dbt marts models create analytical metrics (e.g. km/kWh efficiency)  
+- dbt tests validate data quality and consistency  
+- Prefect orchestrates the workflow (run → test → validate)  
+- Power BI consumes final tables for dashboards  
+
+---
+
+## 📊 Key Insights
+
+- EV energy efficiency varies significantly across manufacturers  
+- Newer models show improved efficiency trends  
+- Vehicle class has a strong impact on energy consumption  
+- Some manufacturers consistently outperform industry averages  
+
+---
+
+## 📁 Project Structure
+
+```text
+dbt_project/        → dbt models (staging, marts, tests)
+prefect_flows/      → orchestration workflows
+powerbi/            → Power BI dashboard file (.pbix)
+data_dictionary/    → Dataset documentation
+
+```
+
+## ⚙️ How to Run This Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/mutethiakigea/energyeveffeciency.git
+cd energyeveffeciency
+2. Install dependencies
+pip install -r requirements.txt
+3. Run dbt models
+dbt run
+dbt test
+4. Run Prefect pipeline
+python prefect_flows/ev_pipeline_flow.py
+📈 Dashboard Preview
+
+Add a screenshot of your Power BI dashboard here:
+
+/powerbi/dashboard.png
+
+💡 What This Project Demonstrates
+Analytics engineering with dbt
+Cloud data warehousing with BigQuery
+Workflow orchestration with Prefect
+Data modeling and transformation
+Business intelligence with Power BI
+End-to-end pipeline design thinking
+🔮 Future Improvements
+Add incremental dbt models for scalability
+Deploy Prefect flows to cloud scheduling
+Automate Power BI refresh pipelines
+Add CI/CD for dbt tests
+Improve documentation with data lineage diagrams
+👨‍💻 Author
+
+Mutethia Kigea
+Analytics Engineer | Data Enthusiast
