@@ -103,17 +103,22 @@ python prefect_flows/ev_pipeline_flow.py
 
 Add a screenshot of your Power BI dashboard here:
 
-![Dashboard Preview](./powerbi/dashboard.png)
+![EV Dashboard](powerbi/dashboard.png)
 
 ### 💡 What This Project Demonstrates
+
 - Analytics engineering with dbt
 - Cloud data warehousing with BigQuery
 - Workflow orchestration with Prefect
 - Data modeling and transformation
 - Business intelligence with Power BI
-End-to-end pipeline design thinking
+  End-to-end pipeline design thinking
 
 ### 👨‍💻 Author
+
 Mutethia Kigea
 Analytics Engineer
+
+```
+
 ```
