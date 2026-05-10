@@ -1,15 +1,43 @@
-Welcome to your new dbt project!
+# 🚀 EV Energy Efficiency Analytics Pipeline
 
-### Using the starter project
+![dbt](https://img.shields.io/badge/dbt-Data_Transformation-orange)
+![BigQuery](https://img.shields.io/badge/BigQuery-Warehouse-blue)
+![Prefect](https://img.shields.io/badge/Prefect-Orchestration-purple)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
+![Python](https://img.shields.io/badge/Python-Automation-green)
 
-Try running the following commands:
-- dbt run
-- dbt test
+---
 
+## ⚡ Project Overview
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+This project is an end-to-end **analytics engineering pipeline** built to analyze electric vehicle (EV) energy efficiency across different manufacturers, models, and vehicle classes.
+
+It demonstrates how modern data teams transform raw data into **clean, reliable, and analytics-ready datasets** using a modern data stack.
+
+---
+
+## 🎯 Problem Statement
+
+Electric vehicle data is often:
+
+- fragmented across sources
+- inconsistent in structure
+- not ready for direct analysis
+
+This project solves that by building a **scalable analytics pipeline** that transforms raw EV data into structured insights.
+
+---
+
+## 🧱 Architecture
+
+```text
+Raw EV Data
+   ↓
+BigQuery (Data Warehouse)
+   ↓
+dbt (Staging → Marts Models)
+   ↓
+Prefect (Orchestration Layer)
+   ↓
+Power BI (Dashboard & Insights)
+```
