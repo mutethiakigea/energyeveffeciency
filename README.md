@@ -103,7 +103,7 @@ python prefect_flows/ev_pipeline_flow.py
 
 Add a screenshot of your Power BI dashboard here:
 
-![Dashboard Preview](powerbi/dashboard.png)
+![Dashboard Preview](./powerbi/dashboard.png)
 
 ### 💡 What This Project Demonstrates
 - Analytics engineering with dbt
